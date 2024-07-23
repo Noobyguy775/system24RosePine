@@ -1,0 +1,68 @@
+/**
+ * @name system24 (Rose Pine)
+ * @description A tui-style discord theme. Based on the Rose Pine theme for the text for spicetify. Original Author: https://github.com/darkthemer
+ * @author refact0r, noo.by
+ * @version 1.0.0
+ * @invite nz87hXyvcy
+ * @website https://github.com/refact0r/system24
+ * @source https://github.com/refact0r/system24/blob/master/system24.theme.css
+ * @authorId 508863359777505290
+ * @authorLink https://www.refact0r.dev
+*/
+
+@import url('https://refact0r.github.io/system24/system24.css');
+
+/* customize things here */
+:root {
+	--font: 'DM Mono';
+	letter-spacing: -0.05ch;
+	font-weight: 300;
+	--label-font-weight: 500;
+
+	--corner-text: 'Rose Pine';
+
+	--pad: 16px;
+	--txt-pad: 10px;
+
+	--bg-0: rgb(25, 23, 36); /* Main background color */
+	--bg-1: rgb(33, 31, 45); /* Embed backgrounds + server backgrounds, sub-backgrounds */
+	--bg-2: var(--bg-1); /* Gray buttons */
+	--bg-3: rgb(38, 35, 58); /* Trims & dividers */
+
+	--hover: rgba(255, 255, 255, 0.2); /* Channels when hovered */
+	--active: rgba(250, 255, 255, 0.2); 	/* Channels when clicked */
+	--selected: rgba(253, 253, 253, 0.1); /* Channels when selected */
+
+	--txt-dark: var(--bg-0); /* Dark text on light bgs */
+	--txt-link: var(--rose); /* Links */
+	--txt-0: hsl(248, 27%, 85%);
+	--txt-1: hsl(248, 20%, 65%);
+	--txt-2: hsl(248, 15%, 53%);
+	--txt-3: hsl(248, 11%, 41%);
+
+	--acc-0: var(--rose); /* Main Accent */
+	--acc-1: var(--darkrose); /* Disc. buttons when clicked */
+	--acc-2: var(--rose);
+
+	--border-width: 2px;
+	--border-color: var(--bg-3);
+	--border-hover-color: var(--acc-0);
+	--border-transition: 0.2s ease;
+
+	--online-dot: var(--green);
+	--dnd-dot: var(--darkrose);
+	--idle-dot: var(--yellow);
+	--streaming-dot: var(--rose);
+
+	--mention-txt: var(--acc-0);
+	--mention-bg: color-mix(in oklch, var(--acc-0), transparent 90%);
+	--mention-overlay: color-mix(in oklch, var(--acc-0), transparent 90%);
+	--mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%);
+	--reply-overlay: var(--active);
+	--reply-hover-overlay: var(--hover);
+
+	--rose: rgb(235, 188, 186);
+	--darkrose: rgb(189, 133, 130);
+	--yellow: rgb(193, 174, 147);
+	--green: rgb(155, 187, 89);
+}
